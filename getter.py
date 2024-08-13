@@ -755,7 +755,7 @@ import time
 import requests
 
 # API的基本URL
-base_url = "https://ps.xieniao.com/rsrc/fonts/"
+base_url = "https://ps.com/rsrc/fonts/"
 
 # 遍历字体列表
 for a in ttf:

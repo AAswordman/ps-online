@@ -1,6 +1,6 @@
 {
-	"name": "PhotoXie",
-	"short_name": "PhotoXie",
+	"name": "Photoshop",
+	"short_name": "Photoshop",
 	"display": "standalone",
 	"display_override": ["window-controls-overlay"],
 	"icons": [
