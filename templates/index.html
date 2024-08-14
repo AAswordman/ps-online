@@ -67,7 +67,7 @@
 						var kv=prts[i].split("=");  
 						if(kv[0]=="type") TYPE=parseInt(kv[1]);
 						else if(kv[0]=="rsrc") RSRC=kv[1].length==0 ? [] : kv[1].split(",");
-						//else console.log(kv);
+						console.log(kv);
 					}
 				}
 				
@@ -224,7 +224,7 @@
 				<span style="display:inline-block">
 					<label>Search:</label> <input type="text" id="kwds" oninput="updateView()" style="margin-right:1.5em;"></input>
 				</span>
-				<a id="add_link" href="https://www.photopea.com/tuts/publish-your-psd-templates-in-photopea/" target="_blank">Add your own template!</a>
+				<a id="add_link" href="//www.photopea.com/tuts/publish-your-psd-templates-in-photopea/" target="_blank">Add your own template!</a>
 			</div>
 			<div id="back">
 				<span class="back" onclick="backClicked()">&lt; Back</span>

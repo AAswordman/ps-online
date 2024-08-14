@@ -1,0 +1,20 @@
+{
+  "name": "eledemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0"
+  },
+  "scripts": {
+    "b": "tsc",
+    "w": "tsc -w",
+    "s": "npm run build && electron ./dist/main.js"
+  }
+}
