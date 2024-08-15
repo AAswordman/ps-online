@@ -1,6 +1,6 @@
 {
     "name": "photonship_web",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "a web version of photonship",
     "main": "dist/main.js",
     "keywords": [],
@@ -65,7 +65,7 @@
             "installerHeaderIcon": "./promo/icon_in512.ico",
             "createDesktopShortcut": true,
             "createStartMenuShortcut": true,
-            "shortcutName": "name"
+            "shortcutName": "Photonship Web"
         }
     }
 }

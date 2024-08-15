@@ -13,7 +13,6 @@ function createWindow() {
         },
         width: 800
     });
-    mainWindow.webContents.openDevTools();
     mainWindow.setMenu(null);
     mainWindow.loadFile(path.join(__dirname, '../index.html'));
     mainWindow.on('closed', () => {
