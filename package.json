@@ -1,20 +1,71 @@
 {
-  "name": "eledemo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "electron": "^31.3.1"
-  },
-  "devDependencies": {
-    "@types/node": "^22.2.0"
-  },
-  "scripts": {
-    "b": "tsc",
-    "w": "tsc -w",
-    "s": "npm run build && electron ./dist/main.js"
-  }
+    "name": "photonship_web",
+    "version": "1.0.0",
+    "description": "a web version of photonship",
+    "main": "dist/main.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@electron/remote": "^2.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "^22.3.0",
+        "electron": "^31.3.1",
+        "electron-builder": "^24.13.3"
+    },
+    "scripts": {
+        "b": "tsc",
+        "w": "tsc -w",
+        "s": "pnpm run build && electron ./dist/main.js",
+        "p": "electron-builder --win --x64",
+        "p2": "electron-builder --linux --armv7l"
+    },
+    "build": {
+        "extends": null,
+        "productName": "Photonship Web",
+        "appId": "com.study.photonship.web",
+        "copyright": "@studyOnlyVersion",
+        "directories": {
+            "output": "build"
+        },
+        "win": {
+            "icon": "./promo/icon512.ico",
+            "target": [{
+                "target": "nsis",
+                "arch": ["x64"]
+            }]
+        },
+        "dmg": {
+            "contents": [{
+                "x": 0,
+                "y": 0,
+                "path": "/Application"
+            }]
+        },
+        "linux": {
+            "icon": "./promo/icon512.png",
+            "category": "com.study.photonship.web"
+        },
+        "mac": {
+            "icon": "./promo/icon512.ico",
+            "category": "com.study.photonship.web",
+            "target": [
+                "zip",
+                "dmg"
+            ]
+        },
+        "nsis": {
+            "oneClick": false,
+            "perMachine": true,
+            "allowElevation": true,
+            "allowToChangeInstallationDirectory": true,
+            "installerIcon": "./promo/icon_in512.ico",
+            "uninstallerIcon": "./promo/icon_in512.ico",
+            "installerHeaderIcon": "./promo/icon_in512.ico",
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true,
+            "shortcutName": "name"
+        }
+    }
 }

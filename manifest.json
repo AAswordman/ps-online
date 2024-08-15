@@ -1,6 +1,6 @@
 {
-	"name": "Photoshop",
-	"short_name": "Photoshop",
+	"name": "photonship",
+	"short_name": "ps",
 	"display": "standalone",
 	"display_override": ["window-controls-overlay"],
 	"icons": [

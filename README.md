@@ -1,4 +1,4 @@
-# An online Photoshop Tool
+# An online photonship Tool
 
 This page was originally created by Photopea and later adapted by PhotoXie. I have downloaded it for my personal use.
 
